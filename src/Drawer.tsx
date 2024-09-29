@@ -3,6 +3,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import Home from '@screens/Home';
 import StopWatch from '@screens/StopWatch';
+import Settings from '@screens/Settings';
 
 import { NavigationScreenName } from '@customTypes/navigation';
 
@@ -15,6 +16,10 @@ export default function MyDrawer() {
       <Drawer.Screen
         name={NavigationScreenName.StopWatch}
         component={StopWatch}
+      />
+      <Drawer.Screen
+        name={NavigationScreenName.Settings}
+        component={Settings}
       />
     </Drawer.Navigator>
   );
